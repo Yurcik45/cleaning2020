@@ -1,0 +1,473 @@
+$fontMain: 'Open Sans', sans-serif
+$fontHeader: 'Roboto', sans-serif
+
+
+.AppContainer
+  width: 100%
+  max-width: 100%
+  height: auto
+  .MainDisplayContainer
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 100%
+    max-width: 100%
+    height: 100vh
+    background-image: url('../../IMG/MainIMG/cleanMainBack1.jpg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    .mainText
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 600px
+      height: 300px
+      left: 80px
+      top: 250px
+      position: relative
+      h1
+        font-weight: normal
+        font-size: 100px
+        color: #052d5a
+        p
+          color: #404040
+          display: inline
+    .mainButton
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 50px
+      position: relative
+      bottom: 50px
+      border: none
+      button
+        height: 100%
+        width: 200px
+        outline: none
+        cursor: pointer
+        border: 2px solid #5fb0c5
+        background-color: rgba(21, 104, 179, 0.89)
+        border-radius: 25px
+        p
+          font-size: 20px
+          color: white
+        a
+          text-decoration: none
+          color: black
+        &:hover
+          border: 2px solid #00A8B2
+          background-color: #007680
+
+
+
+  .preorityContainer
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    align-items: center
+    width: 100%
+    height: 40vh
+    background-color: rgba(15, 230, 243, 0.13)
+    background-image: url('../../IMG/SVG/blueDottedLine.svg')
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100%
+    .preorityItem
+      align-items: center
+      //border: 1px solid red
+      width: 250px
+      height: 250px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      .preoritySvg
+        display: flex
+        align-items: center
+        justify-content: center
+        svg
+          margin-top: 100px
+          position: absolute
+      //border: 2px solid red
+      .preorityDescription
+        p
+          text-align: center
+          font-size: 17px
+  .benefitsContainer
+    border-top: 1px solid rgba(11, 11, 11, 0.43)
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    height: 35vh
+    width: 100%
+    //background-color: #52A7D7
+    background-color: rgba(15, 230, 243, 0.1)
+    .benefitsHeader
+      p
+        font-family: $fontHeader
+        font-size: 30px
+    .benefitsItemsContainer
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+      width: 100%
+      //width: calc(100% - 200px)
+      //padding: 0 100px
+      .benefitsItems
+        display: flex
+        justify-content: left
+        align-items: center
+        flex-direction: row
+        //width: 650px
+        margin: 20px 30px
+        .benefitsSVG
+          display: flex
+          align-items: center
+          svg
+            width: 25px
+            height: 25px
+        .benefitsText
+          padding-left: 20px
+          p
+            font-size: 20px
+            font-family: $fontMain
+
+
+
+  .telephonesTable
+    border-top: 1px solid rgba(11, 11, 11, 0.43)
+    display: block
+    width: 100%
+    height: auto
+    margin: 30px 0
+    .headOfPrice
+      display: flex
+      align-items: center
+      justify-content: center
+      margin: 20px 0
+      p
+        font-size: 30px
+        font-family: $fontHeader
+    .telephonesTableHeader
+      display: flex
+      flex-direction: row
+      margin: 0 auto
+      width: calc(100% - 400px)
+      padding: 0 200px
+      .DivHeaderL, .DivHeaderR
+        outline: 1px solid rgba(150, 149, 159, 0.4)
+        p
+          text-align: center
+          font-size: 20px
+          padding: 10px 20px
+      .DivHeaderL
+        width: 80%
+      .DivHeaderR
+        width: 20%
+    .telephonesTableBody
+      display: flex
+      margin: 0 auto
+      width: calc(100% - 400px)
+      padding: 0 200px
+      .DivBodyL, .DivBodyR
+        outline: 1px solid rgba(150, 149, 159, 0.4)
+        p
+          font-size: 20px
+          padding: 10px 20px
+      .grey
+        background: rgba(165, 165, 165, 0.24)
+      .DivBodyL
+        width: 80%
+      .DivBodyR
+        width: 20%
+
+  .galleryContainer
+    border-top: 1px solid rgba(11, 11, 11, 0.43)
+    //background-image: url("./IMG/MainIMG/galleryBackground4.png")
+    //background-position: unset
+    //background-repeat: repeat
+    //background-size: contain
+    background: white
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    //border: 1px solid deeppink
+    width: calc(100% - 160px)
+    padding: 0 80px
+    .headOfGallery
+      display: block
+      width: 100%
+      margin: 20px 0
+      text-align: center
+      p
+        font-family: $fontHeader
+        font-size: 30px
+    .imageContainer
+      width: 300px
+      height: auto
+      //border: 1px solid red
+      margin: 10px
+      img
+        border-radius: 10px
+        width: 100%
+        height: auto
+
+
+
+
+
+
+
+
+  .topAboutContainer
+    display: flex
+    flex-direction: row
+    height: 30vh
+    margin: 30px 0
+    //border: 1px solid red
+    .aboutAvatar
+      display: flex
+      width: 30%
+      height: 100%
+      justify-content: center
+      align-items: center
+      //border-right: 1px solid red
+      img
+        border-radius: 5px
+        width: 200px
+        height: 200px
+    .aboutTextContainer
+      //border: 1px solid red
+      display: flex
+      flex-direction: column
+      //border: 1px solid red
+      width: 70%
+      height: 100%
+      .aboutHead
+        //border: 1px solid black
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 25%
+        //border: 1px solid greenyellow
+        p
+          font-size: 30px
+          font-family: $fontHeader
+      .aboutText
+        //border: 1px solid blueviolet
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 0
+        height: 75%
+        text-align: left
+        h4
+          font-weight: unset
+          text-align: center
+          font-size: 22px
+          font-family: $fontHeader
+        p
+          line-height: 30px
+          padding: 15px 0 10 0
+          text-align: center
+          font-size: 20px
+          font-family: $fontMain
+
+
+
+
+  .bottomAboutContainer
+    //border: 1px solid red
+    border-top: 1px solid rgba(11, 11, 11, 0.43)
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 35vh
+    .bottomHead
+      text-align: center
+      //border: 1px solid black
+      margin: 20px 0
+      height: 15%
+      p
+        font-size: 30px
+        font-family: $fontHeader
+    .bottomIconsContainer
+      //border: 1px solid blue
+      display: flex
+      align-items: center
+      flex-direction: row
+      height: 70%
+      justify-content: space-evenly
+      .bottomIcon
+        //border: 1px solid red
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-evenly
+        height: 100%
+        width: 20%
+        //border: 1px solid #0016ff
+        .bottomSVG
+          svg
+            width: 70px
+            height: 70px
+        .bottomSvgName
+          p
+            font-size: 25px
+            font-family: $fontHeader
+    .bottomText
+      //border: 1px solid greenyellow
+      display: flex
+      justify-content: center
+      align-items: center
+      //border: 3px solid black
+      height: 15%
+      p
+        text-align: center
+        font-size: 15px
+        font-family: $fontMain
+
+
+
+  .contactsContainer
+    border-top: 1px solid rgba(11, 11, 11, 0.43)
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 55vh
+    background: rgba(186, 186, 186, 0.18)
+    //border: 1px solid red
+    .contactsHead
+      //border: 1px solid black
+      display: flex
+      justify-content: center
+      align-items: center
+      height: 10vh
+      p
+        font-size: 30px
+        font-family: $fontHeader
+    .topContactsContainer
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: space-evenly
+      width: 100%
+      height: 20vh
+      //border: 1px solid rgba(138, 138, 138, 0.62)
+      //border-left: none
+      //border-right: none
+      //border-top: none
+      //border: 1px solid red
+      background: rgba(213, 213, 213, 0.33)
+      .topNumbersContainer
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        //border: 1px solid red
+        width: 35%
+        .numbersHeader
+          p
+            font-family: $fontHeader
+            font-size: 20px
+        .numbersContainer
+          display: flex
+          flex-direction: column
+          .number
+            p
+              font-family: $fontHeader
+              font-size: 18px
+              line-height: 30px
+      .mailContainer
+        p
+          font-family: $fontHeader
+          font-size: 20px
+    .bottomContacts
+      display: flex
+      flex-direction: column
+      height: 40vh
+      //border: 2px solid black
+      .leftBottomContacts
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-evenly
+        height: 10vh
+        width: calc( 100% - 800px )
+        margin: 0 400px
+        //border: 2px solid green
+        h4
+          font-family: $fontHeader
+          font-size: 20px
+        p
+          font-family: $fontMain
+          font-size: 17px
+      .rightBottomContacts
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        align-items: center
+        border: 1px solid rgba(138, 138, 138, 0.62)
+        border-left: none
+        border-right: none
+        border-bottom: none
+        //border: 1px solid red
+        background: rgba(222, 222, 222, 0.22)
+        //border: 1px solid blue
+        height: 20vh
+        .socialIconHeader
+          text-align: center
+          //border: 1px solid black
+          p
+            font-family: $fontHeader
+            font-size: 18px
+        .socialIconsContainer
+          display: flex
+          flex-direction: row
+          justify-content: space-around
+          align-items: center
+          width: 70%
+          //border: 2px solid red
+          .socialIcon
+            display: flex
+            flex-direction: row
+            align-items: center
+            justify-content: center
+            //border: 2px solid black
+            img
+              width: 50px
+              height: 50px
+            p
+              font-family: $fontHeader
+              padding-left: 15px
+  footer
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    align-items: center
+    height: 30px
+    width: calc(100% - 60px)
+    padding: 10px 30px
+    background-color: #3b3b3b
+    .up
+      a
+        text-decoration: none
+        p
+          color: #cfcfcf
+          transition: .3s
+          text-transform: uppercase
+          display: block
+          font-size: 20px
+          font-family: Roboto, sans-serif
+    .down
+      p
+        text-decoration: underline
+        color: #cfcfcf
+        font-size: 15px
+        font-family: Roboto, sans-serif
